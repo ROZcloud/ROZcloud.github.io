@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>RozOS Info</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f0f0f0;
+        }
+        .container {
+            background: white;
+            padding: 50px;
+            border-radius: 10px;
+            box-shadow: 0 0 150px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+        }
+        b21 {
+            display: block;
+            font-size: 2em;
+            color: #474747;
+            font-weight: bold;
+            margin: 0.67em 0;
+            border-bottom: 3px solid #555555;
+            padding-bottom: 10px
+            
+        }
+        h2 {
+            color: #34495e;
+            margin-top: 25px;
+            border-left: 4px solid #e74c3c;
+            padding-left: 10px;
+        }
+        .command-block {
+            background: #2c3e50;
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
+            font-family: 'Courier New', monospace;
+            margin: 15px 0;
+        }
+        .warning {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 15px 0;
+        }
+        strong {
+            color: #e74c3c;
+        }
+    </style>
+    <script>
+        window.addEventListener('load', function() {
+             // USUŃ WSZYSTKIE STYLE
+             
+
+             // Załaduj CSS z LocalStorage
+             const zapisanyCSS = localStorage.getItem('cssname');
+             if (zapisanyCSS) {
+                const wszystkieStyle = document.querySelectorAll('style');
+             wszystkieStyle.forEach(style => style.remove());
+                 const style = document.createElement('style');
+                 style.textContent = zapisanyCSS;
+                 document.head.appendChild(style);
+        }
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Instrukcja instalacji RozOS</h1>
+        
+        <h2>Edycja polska</h2>
+        <p><strong>Aby zainstalować poprawnie RozOS należy</strong></p>
+        <p><strong>Upewnić się że posiadasz plik <code>RozOS installer.exe</code> i uruchomić ten plik postępuj z instrukcjami na ekranie</strong></p>
+        
+        <h2>Podstawowe komendy</h2>
+        <div class="command-block">
+            logs  - manager logów UWAŻAJ!<br>
+            chat  - RozOS AI<br>
+            excel - mini wersja excela
+        </div>
+        
+        <h1>Reinstalacja systemu</h1>
+        <p>Aby ustawić system od nowa i usunąć dane należy wpisać komendę <code>logs</code> i wybrać potem <code>re force system reinitialization</code></p>
+        
+        <div class="warning">
+            <strong>UWAGA:</strong> to usunie wszystkie ustawienia, pliki RozOS excel i innych RozOS usług
+        </div>
+        <b21>witam</b21>
+    </div>
+</body>
+</html>

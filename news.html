@@ -17,7 +17,15 @@
             padding: 50px;
             box-shadow: 0 0 150px rgba(0,0,0,0.1);
         }
-
+        .form-input {
+            width: 50%;
+            padding: 15px;
+            margin: 20px 0;
+            border: 2px solid #e0e0e0;
+            border-radius: 10px;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
         h1 {
             color: #2c3e50;
             border-bottom: 3px solid #3498db;
@@ -29,15 +37,6 @@
             margin-top: 25px;
             border-left: 4px solid #e74c3c;
             padding-left: 10px;
-        }
-        .form-input {
-            width: 50%;
-            padding: 15px;
-            margin: 20px 0;
-            border: 2px solid #e0e0e0;
-            border-radius: 10px;
-            font-size: 16px;
-            transition: all 0.3s ease;
         }
 
         .btn1 {
@@ -77,16 +76,6 @@
 
     </style>
     <script>
-        function loadcsstostortage(event) {
-            const file = event.target.files[0];
-            const reader = new FileReader();
-            reader.onload = function(e) {
-                const cssContent = e.target.result;
-                localStorage.setItem("cssname", cssContent);
-                alert("refresh the page");
-            };
-            reader.readAsText(file);
-        }
         window.addEventListener('load', function() {
              // USUŃ WSZYSTKIE STYLE
              
@@ -100,31 +89,20 @@
                  style.textContent = zapisanyCSS;
                  document.head.appendChild(style);
         }
-    });
+        });
     </script>
     <title>RozOS</title>
 </head>
 
 <body> 
 <div class="container">
-    <h1>Welcome to RozOS</h1>
-    <h2>Login to platform</h2>
-    <button class="btn1" onclick="location.href='login.html'">Login</button>
-    <h2>Or check out my github</h2>
-    <button class="btn1" onclick="location.href='https://github.com/ROZcloud'">GitHub</button>
+    <h1 style="text-align: center;">News</h1>
+    <h2>RozOS 4.0.0 Released!</h2>
     <p></p>
-    <button class="btn1" onclick="location.href='news.html'">RozOS news</button>
-    <p></p>
-    <div class="warning">
-        <h2>Wait?</h2>
-        <h2>Is your account blocked?</h2>
-        <button class="btn1" style="margin-left: 20px;" onclick="location.href='unlock.html'">Unlock account</button>
-    </div>
-    <p>Load your css file?</p>
-    <input type="file" class="form-input" id="cssFileInput" accept=".css" onchange="loadcsstostortage(event)">
-    <p></p>
-    <button class="btn1" onclick="localStorage.removeItem('cssname'); alert('refresh the page');">load default css</button>
-    
+    <h2>New my screach project</h2>
+    <button class="btn1" onclick="location.href='project/index.html'">A hit across the internet</button>
+    <h2>New minecraft 3D in screach!</h2>
+    <button class="btn1" onclick="location.href='minecraft.html'">Play minecraft 3D in screach</button>
 </div>
 
 </body>

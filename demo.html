@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>  
+<html>
 <!-- font-family: Arial, sans-serif; -->
 <head>
+    <title>RozOS Dashboard</title>
     <style>
         body {
             background-color: #f0f0f0;
@@ -10,6 +11,15 @@
             margin: 0 auto;
             padding: 20px;
 
+        }
+        .btn1 {
+            background-color: #3498db;
+            color: white;
+            padding: 10px 25px;
+            border-radius: 5px;
+            border: 0;
+            cursor: pointer;
+            font-size: 16px;
         }
         .container {
             background: white;
@@ -23,12 +33,18 @@
             border-bottom: 3px solid #3498db;
             padding-bottom: 10px;
         }
-
         h2 {
             color: #34495e;
             margin-top: 25px;
             border-left: 4px solid #e74c3c;
             padding-left: 10px;
+        }
+        .warning {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            padding: 15px;
+            border-radius: 5px;
+            margin: auto 0;
         }
         .form-input {
             width: 50%;
@@ -39,23 +55,6 @@
             font-size: 16px;
             transition: all 0.3s ease;
         }
-
-        .btn1 {
-            background-color: #3498db;
-            color: white;
-            padding: 10px 25px;
-            border-radius: 5px;
-            border: 0;
-            cursor: pointer;
-            font-size: 16px;
-        }
-        .warning {
-            background: #fff3cd;
-            border: 1px solid #ffeaa7;
-            padding: 15px;
-            border-radius: 5px;
-            margin: 15px 0;
-        }
         .command-block {
             background: #2c3e50;
             color: white;
@@ -64,29 +63,20 @@
             font-family: 'Courier New', monospace;
             margin: 15px 0;
         }
-        .feature-list {
-            font-family: sans-serif;
-            color: #34495e;
-            margin: 20px 0;
-        }
         p {
             font-family: Arial, sans-serif;
             font-size: 16px;
             color: #2c3e50;
         }
+        .feature-list {
+            font-family: sans-serif;
+            color: #34495e;
+            margin: 20px 0;
+        }
 
     </style>
     <script>
-        function loadcsstostortage(event) {
-            const file = event.target.files[0];
-            const reader = new FileReader();
-            reader.onload = function(e) {
-                const cssContent = e.target.result;
-                localStorage.setItem("cssname", cssContent);
-                alert("refresh the page");
-            };
-            reader.readAsText(file);
-        }
+        // Load custom CSS from local storage if available
         window.addEventListener('load', function() {
              // USUŃ WSZYSTKIE STYLE
              
@@ -100,33 +90,33 @@
                  style.textContent = zapisanyCSS;
                  document.head.appendChild(style);
         }
-    });
+        });
     </script>
-    <title>RozOS</title>
 </head>
-
-<body> 
+<body>
 <div class="container">
-    <h1>Welcome to RozOS</h1>
-    <h2>Login to platform</h2>
-    <button class="btn1" onclick="location.href='login.html'">Login</button>
-    <h2>Or check out my github</h2>
-    <button class="btn1" onclick="location.href='https://github.com/ROZcloud'">GitHub</button>
-    <p></p>
-    <button class="btn1" onclick="location.href='news.html'">RozOS news</button>
-    <p></p>
+    <h1>RozOS Dashboard</h1>
+    <h2>Welcome, guest!</h2>
+    <h2>new features of the RozOS system</h2>
+    <p>This is your dashboard where you can explore the new features of the RozOS platform.</p>
+    <p> </p>
+    <h2>New features:</h2>
+    <h2>Guest Access</h2>
     <div class="warning">
-        <h2>Wait?</h2>
-        <h2>Is your account blocked?</h2>
-        <button class="btn1" style="margin-left: 20px;" onclick="location.href='unlock.html'">Unlock account</button>
+        <strong>Warning:</strong> Make sure to log out after your session to protect your guest access.
+        <p></p>
+        <button class="btn1" style="margin-left: 20px;" onclick="localStorage.removeItem('guest'); location.href='login.html'">Logout</button>
+        <p></p>
+        <button class="btn1" style="margin-left: 20px;" onclick="localStorage.removeItem('guest'); location.href='index.html'">Go to Main Page and Logout</button>
     </div>
-    <p>Load your css file?</p>
-    <input type="file" class="form-input" id="cssFileInput" accept=".css" onchange="loadcsstostortage(event)">
-    <p></p>
-    <button class="btn1" onclick="localStorage.removeItem('cssname'); alert('refresh the page');">load default css</button>
-    
 </div>
 
+<script>
+    if (localStorage.getItem("guest") !== "true") {
+        window.location.href = "login.html";
+    }else {
+        console.log("Guest access granted.");
+    }
+</script>
 </body>
-
 </html>
