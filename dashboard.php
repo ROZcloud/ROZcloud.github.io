@@ -124,6 +124,7 @@
     </script>
 </head>
 <body>
+<h2>Time: <?php echo date("d-m-y"); ?><h2>
 <div class="container">
     <h1>RozOS Dashboard</h1>
     <h2>Welcome, Admin!</h2>
