@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Szkoła Podstawowa nr 1 - Przyszłość zaczyna się tutaj</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Nawigacja -->
+    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex items-center gap-2">
+                    <div class="bg-blue-600 p-2 rounded-lg">
+                        <i class="fas fa-graduation-cap text-white text-2xl"></i>
+                    </div>
+                    <span class="text-xl font-bold text-blue-900 tracking-tight">SP NR 1</span>
+                </div>
+                
+                <!-- Menu Desktop -->
+                <div class="hidden md:flex space-x-8 font-medium">
+                    <a href="#home" class="hover:text-blue-600 transition">Start</a>
+                    <a href="#about" class="hover:text-blue-600 transition">O nas</a>
+                    <a href="#news" class="hover:text-blue-600 transition">Aktualności</a>
+                    <a href="#offer" class="hover:text-blue-600 transition">Oferta</a>
+                    <a href="#contact" class="hover:text-blue-600 transition text-blue-600 font-bold">Kontakt</a>
+                </div>
+
+                <!-- Przycisk Mobilny -->
+                <div class="md:hidden">
+                    <button class="text-gray-600 focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sekcja Hero -->
+    <header id="home" class="hero-gradient text-white py-20 lg:py-32 overflow-hidden relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="lg:flex items-center">
+                <div class="lg:w-1/2 space-y-6">
+                    <h1 class="text-4xl lg:text-6xl font-extrabold leading-tight">
+                        Miejsce, gdzie <br><span class="text-blue-200">pasja spotyka naukę</span>
+                    </h1>
+                    <p class="text-lg text-blue-100 max-w-lg">
+                        Nasza szkoła to nowoczesne centrum edukacyjne, w którym wspieramy talenty, budujemy relacje i przygotowujemy do wyzwań przyszłości w przyjaznej atmosferze.
+                    </p>
+                    <div class="flex flex-wrap gap-4 pt-4">
+                        <a href="#offer" class="bg-white text-blue-700 px-8 py-4 rounded-xl font-bold shadow-lg hover:bg-blue-50 transition transform hover:-translate-y-1">Poznaj naszą ofertę</a>
+                        <a href="#contact" class="bg-transparent border-2 border-white/30 hover:border-white text-white px-8 py-4 rounded-xl font-bold transition">Zapisz dziecko</a>
+                    </div>
+                </div>
+                <div class="hidden lg:block lg:w-1/2">
+                    <div class="relative">
+                        <div class="absolute -top-10 -right-10 w-64 h-64 bg-blue-400 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-pulse"></div>
+                        <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=1000&auto=format&fit=crop" 
+                             alt="Klasa szkolna" 
+                             class="rounded-3xl shadow-2xl rotate-2 hover:rotate-0 transition duration-500 w-full object-cover h-[400px]">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Statystyki -->
+    <section class="max-w-7xl mx-auto px-4 -mt-12 relative z-20">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 bg-white p-8 rounded-2xl shadow-xl">
+            <div class="text-center border-r border-gray-100 last:border-0">
+                <p class="text-3xl font-bold text-blue-600">450+</p>
+                <p class="text-sm text-gray-500 uppercase tracking-wider font-semibold">Uczniów</p>
+            </div>
+            <div class="text-center border-r border-gray-100 last:border-0">
+                <p class="text-3xl font-bold text-blue-600">35</p>
+                <p class="text-sm text-gray-500 uppercase tracking-wider font-semibold">Nauczycieli</p>
+            </div>
+            <div class="text-center border-r border-gray-100 last:border-0">
+                <p class="text-3xl font-bold text-blue-600">12</p>
+                <p class="text-sm text-gray-500 uppercase tracking-wider font-semibold">Kół zainteresowań</p>
+            </div>
+            <div class="text-center last:border-0">
+                <p class="text-3xl font-bold text-blue-600">100%</p>
+                <p class="text-sm text-gray-500 uppercase tracking-wider font-semibold">Bezpieczeństwa</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Aktualności -->
+    <section id="news" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-end mb-12">
+            <div>
+                <h2 class="text-3xl font-bold text-gray-900">Aktualności</h2>
+                <div class="h-1 w-20 bg-blue-600 mt-2"></div>
+            </div>
+            <a href="#" class="text-blue-600 font-semibold hover:underline">Zobacz wszystkie &rarr;</a>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- News 1 -->
+            <article class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition">
+                <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=500&auto=format&fit=crop" class="h-48 w-full object-cover" alt="Szkolny konkurs">
+                <div class="p-6 space-y-3">
+                    <span class="text-xs font-bold text-blue-600 uppercase">Wydarzenia</span>
+                    <h3 class="text-xl font-bold text-gray-900 leading-tight">Finał konkursu "Młody Programista"</h3>
+                    <p class="text-gray-600 text-sm">Nasi uczniowie zdobyli główne nagrody w wojewódzkim etapie konkursu programistycznego...</p>
+                    <p class="text-gray-400 text-xs">15 lutego 2024</p>
+                </div>
+            </article>
+
+            <!-- News 2 -->
+            <article class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition border-t-4 border-blue-600">
+                <div class="p-6 space-y-3">
+                    <span class="text-xs font-bold text-green-600 uppercase">Ogłoszenia</span>
+                    <h3 class="text-xl font-bold text-gray-900 leading-tight">Rekrutacja na rok szkolny 2024/25</h3>
+                    <p class="text-gray-600 text-sm">Informujemy, że rozpoczęliśmy przyjmowanie wniosków o przyjęcie do klas pierwszych. Sprawdź terminy!</p>
+                    <a href="#" class="inline-block text-blue-600 font-bold text-sm">Czytaj więcej &rarr;</a>
+                </div>
+            </article>
+
+            <!-- News 3 -->
+            <article class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition">
+                <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=500&auto=format&fit=crop" class="h-48 w-full object-cover" alt="Wycieczka szkolna">
+                <div class="p-6 space-y-3">
+                    <span class="text-xs font-bold text-blue-600 uppercase">Sport</span>
+                    <h3 class="text-xl font-bold text-gray-900 leading-tight">Złoty medal w biegach przełajowych</h3>
+                    <p class="text-gray-600 text-sm">Ogromny sukces reprezentacji naszej szkoły w powiatowych zawodach lekkoatletycznych.</p>
+                    <p class="text-gray-400 text-xs">10 lutego 2024</p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Oferta -->
+    <section id="offer" class="bg-blue-900 py-20 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold">Dlaczego warto nas wybrać?</h2>
+                <p class="text-blue-200 mt-4 max-w-2xl mx-auto">Zapewniamy wszechstronny rozwój, nowoczesne technologie i wsparcie kadry specjalistów.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="p-8 bg-blue-800/50 rounded-2xl hover:bg-blue-800 transition text-center">
+                    <div class="bg-blue-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-microchip text-2xl"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3">Klasy STEM</h4>
+                    <p class="text-blue-100 text-sm leading-relaxed">Nowoczesne pracownie robotyki i druku 3D dostępne dla każdego ucznia.</p>
+                </div>
+
+                <div class="p-8 bg-blue-800/50 rounded-2xl hover:bg-blue-800 transition text-center">
+                    <div class="bg-blue-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-language text-2xl"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3">Języki Obce</h4>
+                    <p class="text-blue-100 text-sm leading-relaxed">Rozszerzony angielski oraz hiszpański z native speakerami.</p>
+                </div>
+
+                <div class="p-8 bg-blue-800/50 rounded-2xl hover:bg-blue-800 transition text-center">
+                    <div class="bg-blue-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-heartbeat text-2xl"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3">Opieka i Wsparcie</h4>
+                    <p class="text-blue-100 text-sm leading-relaxed">Dostęp do psychologa, logopedy oraz zajęć wyrównawczych.</p>
+                </div>
+
+                <div class="p-8 bg-blue-800/50 rounded-2xl hover:bg-blue-800 transition text-center">
+                    <div class="bg-blue-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-palette text-2xl"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3">Kółka Zainteresowań</h4>
+                    <p class="text-blue-100 text-sm leading-relaxed">Od teatru po szachy – rozwijamy pasje naszych uczniów po lekcjach.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontakt -->
+    <section id="contact" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="bg-white rounded-3xl shadow-2xl overflow-hidden lg:flex">
+            <div class="lg:w-1/2 p-10 lg:p-20 bg-gray-50 border-r border-gray-100">
+                <h2 class="text-3xl font-bold text-gray-900 mb-8">Skontaktuj się z nami</h2>
+                <div class="space-y-6">
+                    <div class="flex items-start gap-4">
+                        <div class="bg-blue-100 p-3 rounded-lg text-blue-600">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <p class="font-bold">Adres</p>
+                            <p class="text-gray-600">ul. Szkolna 123, 00-001 Warszawa</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="bg-blue-100 p-3 rounded-lg text-blue-600">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div>
+                            <p class="font-bold">Telefon</p>
+                            <p class="text-gray-600">+48 22 123 45 67</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="bg-blue-100 p-3 rounded-lg text-blue-600">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <p class="font-bold">E-mail</p>
+                            <p class="text-gray-600">sekretariat@sp1.edu.pl</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-12 pt-12 border-t border-gray-200">
+                    <h4 class="font-bold mb-4">Godziny pracy sekretariatu:</h4>
+                    <p class="text-gray-600">Poniedziałek - Piątek: 07:30 - 15:30</p>
+                </div>
+            </div>
+            
+            <div class="lg:w-1/2 p-10 lg:p-20">
+                <form class="space-y-6" onsubmit="event.preventDefault(); alert('Wiadomość została wysłana!');">
+                    <div>
+                        <label class="block text-sm font-bold text-gray-700 mb-2">Imię i Nazwisko</label>
+                        <input type="text" placeholder="Twoje dane..." class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition" required>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-bold text-gray-700 mb-2">Adres E-mail</label>
+                        <input type="email" placeholder="email@przyklad.pl" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition" required>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-bold text-gray-700 mb-2">Wiadomość</label>
+                        <textarea rows="4" placeholder="W czym możemy pomóc?" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition" required></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-blue-600 text-white font-bold py-4 rounded-xl shadow-lg hover:bg-blue-700 transition transform active:scale-95">Wyślij wiadomość</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-12">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <div class="flex justify-center items-center gap-2 mb-6">
+                <i class="fas fa-graduation-cap text-white text-2xl"></i>
+                <span class="text-xl font-bold text-white">SP NR 1</span>
+            </div>
+            <p class="text-sm">© 2024 Szkoła Podstawowa nr 1. Wszystkie prawa zastrzeżone.</p>
+            <div class="flex justify-center gap-6 mt-6">
+                <a href="#" class="hover:text-white transition"><i class="fab fa-facebook text-xl"></i></a>
+                <a href="#" class="hover:text-white transition"><i class="fab fa-instagram text-xl"></i></a>
+                <a href="#" class="hover:text-white transition"><i class="fab fa-youtube text-xl"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
