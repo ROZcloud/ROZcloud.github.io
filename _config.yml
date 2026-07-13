@@ -7,6 +7,6 @@ show_downloads: true
 header_pages:
   - index.md
   - osystemie.md
-plugins:
-  - jekyll-seo-tag
-  - jekyll-sitemap
+# plugins:
+#   - jekyll-seo-tag
+#   - jekyll-sitemap
