@@ -1,0 +1,15 @@
+title: "RozOS System Creator Set"
+description: "Analizy, logi i projekty techniczne"
+theme: jekyll-theme-cayman
+
+# Pasek nawigacyjny
+navigation:
+  - title: "Start"
+    url: /
+  - title: "Projekty"
+    url: /projekty/
+  - title: "Logi"
+    url: /logi/
+
+# Ustawienia strony
+show_downloads: false
