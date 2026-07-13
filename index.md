@@ -1,6 +1,7 @@
 ---
 layout: home
-title: Strona główna
+title: Zestaw do tworzenia systemów RozOS
+description: Profesjonalny zestaw do tworzenia systemów. Znajdziesz tutaj narzędzia, poradniki i dokumentację krok po kroku.
 ---
 
 # Zestaw do tworzenia systemów w kernel c
