@@ -1,8 +1,7 @@
-title: "Moja Strona"
+title: "Zestaw do tworzenia systemów"
+description: "Profesjonalny zestaw do tworzenia systemów. Znajdziesz tutaj narzędzia, poradniki i dokumentację krok po kroku."
 theme: minima
-show_downloads: false
-plugins:
-  - jekyll-seo-tag
+show_downloads: true
 
 # Konfiguracja nawigacji
 header_pages:
