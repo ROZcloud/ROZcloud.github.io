@@ -5,9 +5,19 @@ title: Strona główna
 
 # Zestaw do tworzenia systemów w kernel c
 Ten zestaw wspiera interface TUI i autorską bibliotekę RozOS TUI Framework
+
 ![alt text](image.png)
-I prosty System Shell
-No Image File!
+
+<a href="https://github.com/ROZcloud/ROZcloud.github.io/archive/refs/heads/main.zip" style="
+    background-color: #007bff; 
+    color: white; 
+    padding: 10px 20px; 
+    text-decoration: none; 
+    border-radius: 5px; 
+    font-weight: bold;">
+    Pobierz pakiet
+</a>
+###
 Opis w AI:
 # RozOS (by ROZcloud)
 
