@@ -1,6 +1,6 @@
 ---
 layout: home
-title: Zestaw do tworzenia systemów RozOS
+title: Zestaw do tworzenia systemów
 description: Profesjonalny zestaw do tworzenia systemów. Znajdziesz tutaj narzędzia, poradniki i dokumentację krok po kroku.
 ---
 
