@@ -42,4 +42,6 @@ static inline uint16_t inw(unsigned short port) {
     return ret;
 }
 ```
+# Jak zdecydowałem się zrobić system RozOS
+Historia Różo sjest długa wszystko zaczęło się, gdy poznałem linux wtedy zobaczyłem jak działają systemy to nie tylko okna jak w windows postanowiłem zrobić prosty system „dysk blokada”, ale nie widziałem, jak programować w ASM użyłem ChatGPT do stworzenia kodu w ASM, który wyświetla „System zablokowany” na niebieskim tle. Projekt porzuciłem bardzo szybko zacząłem robić kody w C++ lub Python emulującze system do minimalistycznego samemu skompilowanego Debiana projekt miał wsparcie około 3 lata dzisiaj projekt jest zatrzymany, ale będzie kontynuawany potem AI zrobiło kilka instrukcji w kernel, ale nie interesowałem się tym i robiłem te aplikacje potem znalazłem te pliki i napisałem RozOS TUI Framework i resztę systemu, ale znowu został porzuczony kali linux, na którym go pisałem miał zainstalowane sterowniki do karty graficznej i nie działał na innym komputerze, a ten komputer się zepsuł pliki odzyskałem 2 miesiącze później poprawiłem i powstała ta strona.
 
