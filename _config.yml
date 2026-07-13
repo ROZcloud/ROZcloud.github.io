@@ -6,8 +6,7 @@ show_downloads: true
 # Konfiguracja nawigacji
 header_pages:
   - index.md
-  - o-nas.md
-  - kontakt.md
+  - osystemie.md
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
