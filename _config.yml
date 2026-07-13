@@ -9,3 +9,6 @@ header_pages:
   - index.md
   - o-nas.md
   - kontakt.md
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
