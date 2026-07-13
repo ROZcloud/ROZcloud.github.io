@@ -3,15 +3,11 @@ layout: default
 title: Start
 ---
 
+<nav style="padding: 10px; background: #f4f4f4; border-bottom: 2px solid #ccc; margin-bottom: 20px;">
+  <a href="/">Start</a> | 
+  <a href="/projekty/">Projekty</a> | 
+  <a href="/logi/">Logi</a>
+</nav>
+
 # Witaj w moim laboratorium!
-
-Jestem **rozcloud**. To miejsce to mój techniczny poligon doświadczalny. 
-Znajdziesz tutaj:
-
-* Analizy sieciowe (PCAP, logi).
-* Eksperymenty z ESP32 i mikrokontrolerami.
-* Notatki z reverse engineeringu.
-
-> "Wszystko, co techniczne, powinno być dobrze udokumentowane."
-
-Sprawdź sekcję [Logi](/logi/) aby zobaczyć, nad czym aktualnie pracuję.
+... (reszta Twojej treści)
