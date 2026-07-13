@@ -1,13 +1,6 @@
 ---
-layout: default
-title: Start
+layout: home
+title: Strona główna
 ---
 
-<nav style="padding: 10px; background: #f4f4f4; border-bottom: 2px solid #ccc; margin-bottom: 20px;">
-  <a href="/">Start</a> | 
-  <a href="/projekty/">Projekty</a> | 
-  <a href="/logi/">Logi</a>
-</nav>
-
-# Witaj w moim laboratorium!
-... (reszta Twojej treści)
+Witaj na mojej stronie! To jest strona główna.
