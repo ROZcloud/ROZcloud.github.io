@@ -17,10 +17,9 @@ Ten zestaw wspiera interface TUI i autorską bibliotekę RozOS TUI Framework
     font-weight: bold;">
     Pobierz pakiet
 </a>
-###
-Opis w AI:
-# RozOS (by ROZcloud)
 
+# Opis w AI:
+# RozOS (by ROZcloud)
 Autorski system operacyjny pisany w języku C.
 
 ## Przegląd techniczny
