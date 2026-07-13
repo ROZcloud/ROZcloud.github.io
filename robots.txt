@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://rozcloud.github.io/sitemap.xml
