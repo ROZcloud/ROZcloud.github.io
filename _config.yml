@@ -13,3 +13,5 @@ navigation:
 
 # Ustawienia strony
 show_downloads: false
+plugins:
+  - jekyll-sitemap
