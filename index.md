@@ -3,13 +3,23 @@ layout: home
 title: Zestaw do tworzenia systemów
 description: Profesjonalny zestaw do tworzenia systemów. Znajdziesz tutaj narzędzia, poradniki i dokumentację krok po kroku.
 ---
+>Uwaga KevosOS to nowa nazwa RozOS 
+###
 
 # Zestaw do tworzenia systemów w kernel c
 Ten zestaw wspiera interface TUI i autorską bibliotekę KevosOS TUI Framework
 
 ![alt text](image.png)
+Start systemu:
+![alt text](image-1.png)
+# Zestaw posiada interaktywną linię poleczeń:
+![alt text](image-2.png)
+Linia poleceń nie oferuje dużo:
+![alt text](image-3.png)
+## ale KevosOS TUI jest bardzo zaawansowany:
+![alt text](image-4.png)
 
-<a href="https://github.com/ROZcloud/ROZcloud.github.io/archive/refs/heads/main.zip" style="
+<a href="https://github.com/ROZcloud/KevosOS-system-creator-set" style="
     background-color: #007bff; 
     color: white; 
     padding: 10px 20px; 

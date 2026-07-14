@@ -7,6 +7,7 @@ show_downloads: true
 header_pages:
   - index.md
   - osystemie.md
+  - kompilacja.md
 # plugins:
 #   - jekyll-seo-tag
 #   - jekyll-sitemap
