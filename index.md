@@ -4,7 +4,6 @@ title: Zestaw do tworzenia systemów
 description: Profesjonalny zestaw do tworzenia systemów. Znajdziesz tutaj narzędzia, poradniki i dokumentację krok po kroku.
 ---
 >Uwaga KevosOS to nowa nazwa RozOS 
-###
 
 # Zestaw do tworzenia systemów w kernel c
 Ten zestaw wspiera interface TUI i autorską bibliotekę KevosOS TUI Framework
